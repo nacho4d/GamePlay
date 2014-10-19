@@ -61,6 +61,7 @@
     <ClCompile Include="src\Label.cpp" />
     <ClCompile Include="src\Layout.cpp" />
     <ClCompile Include="src\Light.cpp" />
+    <ClCompile Include="src\ListBox.cpp" />
     <ClCompile Include="src\Logger.cpp" />
     <ClCompile Include="src\lua\lua_AbsoluteLayout.cpp" />
     <ClCompile Include="src\lua\lua_AIAgent.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="src\lua\lua_LayoutType.cpp" />
     <ClCompile Include="src\lua\lua_Light.cpp" />
     <ClCompile Include="src\lua\lua_LightType.cpp" />
+    <ClCompile Include="src\lua\lua_ListBox.cpp" />
     <ClCompile Include="src\lua\lua_Logger.cpp" />
     <ClCompile Include="src\lua\lua_LoggerLevel.cpp" />
     <ClCompile Include="src\lua\lua_Material.cpp" />
@@ -351,6 +353,7 @@
     <ClInclude Include="src\Label.h" />
     <ClInclude Include="src\Layout.h" />
     <ClInclude Include="src\Light.h" />
+    <ClInclude Include="src\ListBox.h" />
     <ClInclude Include="src\Logger.h" />
     <ClInclude Include="src\lua\lua_AbsoluteLayout.h" />
     <ClInclude Include="src\lua\lua_AIAgent.h" />
@@ -429,6 +432,7 @@
     <ClInclude Include="src\lua\lua_LayoutType.h" />
     <ClInclude Include="src\lua\lua_Light.h" />
     <ClInclude Include="src\lua\lua_LightType.h" />
+    <ClInclude Include="src\lua\lua_ListBox.h" />
     <ClInclude Include="src\lua\lua_Logger.h" />
     <ClInclude Include="src\lua\lua_LoggerLevel.h" />
     <ClInclude Include="src\lua\lua_Material.h" />

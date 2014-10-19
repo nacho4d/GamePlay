@@ -121,6 +121,7 @@ LOCAL_SRC_FILES := \
     Label.cpp \
     Layout.cpp \
     Light.cpp \
+    ListBox.cpp \
     Logger.cpp \
     Material.cpp \
     MaterialParameter.cpp \
@@ -257,6 +258,7 @@ LOCAL_SRC_FILES := \
     lua/lua_LayoutType.cpp \
     lua/lua_Light.cpp \
     lua/lua_LightType.cpp \
+    lua/lua_ListBox.cpp \
     lua/lua_Logger.cpp \
     lua/lua_LoggerLevel.cpp \
     lua/lua_Material.cpp \

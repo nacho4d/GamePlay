@@ -7,6 +7,7 @@
 #include "Container.h"
 #include "Slider.h"
 #include "TextBox.h"
+#include "ListBox.h"
 #include "JoystickControl.h"
 #include "ImageControl.h"
 
@@ -87,6 +88,7 @@ void ControlFactory::registerStandardControls()
     registerCustomControl("TEXTBOX", &TextBox::create);
     registerCustomControl("JOYSTICK", &JoystickControl::create);
     registerCustomControl("IMAGE", &ImageControl::create);
+    registerCustomControl("LISTBOX", &ListBox::create);
 }
 
 }

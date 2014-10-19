@@ -303,6 +303,9 @@
     <ClCompile Include="src\Light.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\ListBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="src\Logger.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -562,6 +565,9 @@
       <Filter>src\lua</Filter>
     </ClCompile>
     <ClCompile Include="src\lua\lua_LightType.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lua\lua_ListBox.cpp">
       <Filter>src\lua</Filter>
     </ClCompile>
     <ClCompile Include="src\lua\lua_Logger.cpp">
@@ -1172,6 +1178,9 @@
     <ClInclude Include="src\Light.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\ListBox.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="src\Logger.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -1431,6 +1440,9 @@
       <Filter>src\lua</Filter>
     </ClInclude>
     <ClInclude Include="src\lua\lua_LightType.h">
+      <Filter>src\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lua\lua_ListBox.h">
       <Filter>src\lua</Filter>
     </ClInclude>
     <ClInclude Include="src\lua\lua_Logger.h">
