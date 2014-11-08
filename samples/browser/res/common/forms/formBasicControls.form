@@ -36,6 +36,27 @@ form basicControls
 		valueTextVisible = true
 	}
 
+    listbox testListBox
+    {
+        position = 50, 30
+        size = 80, 50
+        font = res/ui/arial.gpb
+        fontSize = 14
+        listItem item1
+        {
+            text = alpha
+        }
+        listItem item2
+        {
+            text = beta
+            height = 20
+        }
+        listItem item3
+        {
+            text = charlie
+        }
+    }
+
     label textBoxLabel
     {
         position = 25, 390
@@ -48,6 +69,24 @@ form basicControls
         position = 20, 430
         size = 250, 80
         text = This is a text box.
+    }
+
+    listbox testListBox
+    {
+        position = 50, 30
+        size = 80, 50
+        listItem item1
+        {
+            text = Alpha
+        }
+        listItem item2
+        {
+            text = Beta
+        }
+        listItem item3
+        {
+            text = Charlie
+        }
     }
 
     textBox testPasswordTextBox
