@@ -36,6 +36,23 @@ public:
     static ListBox* create(const char* id, Theme::Style* style = NULL);
 
     virtual void addListener(Control::Listener* listener, int eventFlags);
+    
+    class ListItem {
+        std::string *_text;
+        float _height;
+    public:
+        ListItem(const char *text, float height):
+        _text(new std::string(text)),
+        _height(height)
+        {
+        }
+        ~ListItem()
+        {
+            delete _text;
+        }
+        std::string *text() { return _text; }
+        float height() { return _height; }
+    };
 
 protected:
 
@@ -110,12 +127,56 @@ protected:
      */
     unsigned int drawText(Form* form, const Rectangle& clip);
 
+    /**
+     * @see Control::updateAbsoluteBounds
+     */
+    void updateAbsoluteBounds(const Vector2& offset);
+
+    /**
+     * @see Control::update
+     */
+    void update(float elapsedTime);
+
+
 private:
 
     /**
      * Constructor.
      */
     ListBox(const ListBox& copy);
+
+    /**
+     * List items. All items are rendered with the same font and color
+     */
+    std::vector<ListItem*> _items;
+
+    /**
+     * The position and size of this control's text (various items) area, before clipping.  Used for text alignment.
+     */
+    Rectangle _listBounds;
+
+    /**
+     * The font being used to display the label.
+     */
+    Font* _font;
+
+    /**
+     * The text color being used to display the label.
+     */
+    Vector4 _textColor;
+
+    /**
+     * Current selected item index
+     */
+    int _selectedIndex;
+
+    /**
+     * Selects the item
+     *   by coordinates x,y. Used when receiving touch events
+     *   by index, Used when receiving key events
+     */
+    void changeSelectedItem(float x, float y);
+    void changeSelectedItem(int index);
 };
 
 }
