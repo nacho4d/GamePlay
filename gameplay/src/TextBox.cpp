@@ -334,6 +334,7 @@ void TextBox::updateState(State state)
 
 unsigned int TextBox::drawImages(Form* form, const Rectangle& clip)
 {
+    return 0;
     Control::State state = getState();
 
     if (_caretImage && (state == ACTIVE || hasFocus()))
@@ -368,6 +369,7 @@ unsigned int TextBox::drawImages(Form* form, const Rectangle& clip)
 
 unsigned int TextBox::drawText(Form* form, const Rectangle& clip)
 {
+//    return 0;
     if (_text.size() <= 0)
         return 0;
 

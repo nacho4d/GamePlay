@@ -118,6 +118,11 @@ protected:
     void updateState(State state);
 
     /**
+     * @see Control::drawBorder
+     */
+    unsigned int drawBorder(Form* form, const Rectangle& clip);
+
+    /**
      * @see Control::drawImages
      */
     unsigned int drawImages(Form* form, const Rectangle& clip);

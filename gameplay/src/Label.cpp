@@ -117,6 +117,7 @@ void Label::updateAbsoluteBounds(const Vector2& offset)
 
 unsigned int Label::drawText(Form* form, const Rectangle& clip)
 {
+//    return 0;
     // Draw the text.
     if (_text.size() > 0 && _font)
     {

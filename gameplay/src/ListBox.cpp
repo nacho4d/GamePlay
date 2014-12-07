@@ -152,7 +152,20 @@ void ListBox::updateState(Control::State state)
     _font = getFont(state);
     std::cout << "State " << state << " font: " << _font << std::endl;
 }
+/*
+    void Control::updateState(State state)
+    {
+        // Clear dirty state bit
+        _dirtyBits &= ~DIRTY_STATE;
 
+        // Cache themed attributes for performance.
+        _skin = getSkin(state);
+    }
+*/
+unsigned int ListBox::drawBorder(Form* form, const Rectangle& clip)
+{
+    return Control::drawBorder(form, clip);
+}
 unsigned int ListBox::drawImages(Form* form, const Rectangle& clip)
 {
     // TODO: draw borders, dividers and highlighted item background
